@@ -1,0 +1,96 @@
+/* Site non responsive, à implémenter après le cours correspondant */
+
+* {
+	font-family: alice, sans-serif;
+	margin: 0;
+}
+
+header img {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+header p {
+	text-align: center;
+	color: #218edd;
+	font-size: 140%;
+}
+
+strong {
+	color: #218edd;
+}
+
+nav {
+	background-color: #90c1e5;
+	padding: 25px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	margin-top: 70px;
+	padding-left: 400px;
+	padding-right: 400px;
+	z-index: 0;
+}
+
+.nav-container a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.729);
+	font-size: 20px;
+}
+
+/* A améliorer dans le html */
+.nav-around {
+	margin-top: -96px;
+	padding: 60px 0;
+	background-color: rgba(12, 113, 195, 0.208);
+}
+
+.grid-affiches img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.grid-affiches {
+	margin-top: 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 70px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 70px;
+}
+
+.lien-affiche {
+	position: relative;
+}
+
+.text-overlay-movie,
+.text-overlay-series {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+/* Peut être amélioré? */
+.lien-affiche:hover .text-overlay-movie,
+.lien-affiche:hover .text-overlay-series {
+	display: flex;
+}
+
+a img {
+	border-radius: 10px;
+	box-shadow: 12px 12px 24px black;
+}
