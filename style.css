@@ -1,4 +1,5 @@
-/* Site non responsive, à implémenter après le cours correspondant */
+/* Site non responsive, à implémenter après le cours correspondant 
+Ne répond pas bien au resize de la page, à visionner en plein écran*/
 
 * {
 	font-family: alice, sans-serif;
@@ -6,7 +7,7 @@
 }
 
 header img {
-	width: 50%;
+	width: 30%;
 	display: block;
 	margin: auto;
 }
@@ -14,7 +15,7 @@ header img {
 header p {
 	text-align: center;
 	color: #218edd;
-	font-size: 140%;
+	font-size: 100%;
 }
 
 strong {
@@ -23,7 +24,7 @@ strong {
 
 nav {
 	background-color: #90c1e5;
-	padding: 25px 0;
+	padding: 18px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -31,20 +32,19 @@ nav {
 	margin-top: 70px;
 	padding-left: 400px;
 	padding-right: 400px;
-	z-index: 0;
 }
 
 .nav-container a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.729);
-	font-size: 20px;
+	font-size: 18px;
 }
 
 /* A améliorer dans le html */
 .nav-around {
-	margin-top: -96px;
-	padding: 60px 0;
+	margin-top: -79px;
+	padding: 50px 0;
 	background-color: rgba(12, 113, 195, 0.208);
 }
 
@@ -57,10 +57,10 @@ nav {
 .grid-affiches {
 	margin-top: 70px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	gap: 70px;
-	margin-left: 40px;
-	margin-right: 40px;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 30px;
+	margin-left: 150px;
+	margin-right: 150px;
 	margin-bottom: 70px;
 }
 
@@ -78,10 +78,11 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
+	font-size: 15px;
 	color: rgb(255, 255, 255);
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	display: none;
+	border-radius: 10px;
 }
 
 /* Peut être amélioré? */
@@ -93,4 +94,33 @@ nav {
 a img {
 	border-radius: 10px;
 	box-shadow: 12px 12px 24px black;
+}
+
+.badge-serie,
+.badge-film {
+	position: absolute;
+	top: 87%;
+	left: 72%;
+	color: white;
+	font-size: 15px;
+	background-color: rgba(33, 142, 221, 0.3);
+	padding: 5px;
+	border-radius: 12px;
+}
+
+/* Peut être amélioré? */
+.lien-affiche:hover .badge-film,
+.lien-affiche:hover .badge-serie {
+	display: none;
+}
+
+footer {
+	background-color: black;
+	padding: 50px 0;
+	color: white;
+}
+
+small {
+	display: block;
+	text-align: center;
 }
