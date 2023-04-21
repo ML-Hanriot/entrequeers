@@ -15,7 +15,7 @@ header img {
 header p {
 	text-align: center;
 	color: #218edd;
-	font-size: 100%;
+	font-size: 90%;
 }
 
 strong {
@@ -39,6 +39,10 @@ nav {
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.729);
 	font-size: 18px;
+}
+
+.nav-container a:hover {
+	color: white;
 }
 
 /* A améliorer dans le html */
