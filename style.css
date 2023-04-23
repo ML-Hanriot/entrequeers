@@ -4,6 +4,7 @@ Ne répond pas bien au resize de la page, à visionner en plein écran*/
 * {
 	font-family: alice, sans-serif;
 	margin: 0;
+	padding: 0;
 }
 
 header img {
@@ -127,4 +128,55 @@ footer {
 small {
 	display: block;
 	text-align: center;
+}
+
+h1 {
+	text-transform: capitalize;
+	font-size: 250%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	background-color: rgba(104, 106, 132, 0.211);
+	padding: 50px;
+	color: #ffffff;
+	text-shadow: rgba(0, 0, 0, 0.693) 6px 6px 6px;
+}
+
+.section-affiche-resume {
+	width: 70%;
+	margin: auto;
+	display: grid;
+	gap: 50px;
+	padding: 50px 50px;
+	margin-top: -100px;
+	background-color: rgba(108, 110, 131, 0.137);
+}
+
+.affiche {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 6;
+	box-shadow: black 6px 6px 12px;
+}
+
+.infos {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	color: #218edd;
+}
+
+.resume {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.source {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: small;
 }
