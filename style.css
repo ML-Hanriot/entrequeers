@@ -6,7 +6,7 @@ Ne répond pas bien au resize de la page, à visionner en plein écran*/
 	margin: 0;
 	padding: 0;
 }
-
+/**********************************Header*************************************/
 header img {
 	width: 30%;
 	display: block;
@@ -19,20 +19,18 @@ header p {
 	font-size: 90%;
 }
 
-strong {
-	color: #218edd;
-}
-
-nav {
+/********************************Nav*****************************************/
+/* A améliorer dans le html */
+.nav-container {
 	background-color: #90c1e5;
 	padding: 18px 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin: auto;
 	margin-top: 70px;
-	padding-left: 400px;
-	padding-right: 400px;
+}
+
+.nav-around {
+	margin-top: -79px;
+	padding: 50px 0;
+	background-color: rgba(12, 113, 195, 0.208);
 }
 
 .nav-container a {
@@ -46,13 +44,16 @@ nav {
 	color: white;
 }
 
-/* A améliorer dans le html */
-.nav-around {
-	margin-top: -79px;
-	padding: 50px 0;
-	background-color: rgba(12, 113, 195, 0.208);
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	padding-left: 400px;
+	padding-right: 400px;
 }
 
+/**************************************Grid affiches*******************************/
 .grid-affiches img {
 	height: 100%;
 	width: 100%;
@@ -119,17 +120,7 @@ a img {
 	display: none;
 }
 
-footer {
-	background-color: black;
-	padding: 50px 0;
-	color: white;
-}
-
-small {
-	display: block;
-	text-align: center;
-}
-
+/*********************************Pages de films*******************************/
 h1 {
 	text-transform: capitalize;
 	font-size: 250%;
@@ -179,4 +170,16 @@ h1 {
 .source {
 	color: rgba(0, 0, 0, 0.3);
 	font-size: small;
+}
+
+/***************************Footer*************************************/
+footer {
+	background-color: black;
+	padding: 50px 0;
+	color: white;
+}
+
+small {
+	display: block;
+	text-align: center;
 }
